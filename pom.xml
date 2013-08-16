@@ -13,12 +13,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>org.jboss.as.quickstarts</groupId>
-	<artifactId>jboss-as-numberguess</artifactId>
-	<version>7.1.2-SNAPSHOT</version>
+	<groupId>com.outjected</groupId>
+	<artifactId>less-test</artifactId>
+	<version>0.0.1</version>
 	<packaging>war</packaging>
-	<name>JBoss AS Quickstarts: Numberguess</name>
-	<description>JBoss AS Quickstarts: Numberguess</description>
+	<name>LESS TEST</name>
+	<description>LESS TEST</description>
 
 	<url>http://jboss.org/jbossas</url>
 	<licenses>
@@ -47,7 +47,9 @@
 		<!-- maven-compiler-plugin -->
 		<maven.compiler.target>1.6</maven.compiler.target>
 		<maven.compiler.source>1.6</maven.compiler.source>
-		<wro4j.version>1.6.2</wro4j.version>
+		<wro4j.version>1.7.0</wro4j.version>
+		<less4j.version>1.0.4</less4j.version>
+
 	</properties>
 
 	<dependencyManagement>
@@ -154,7 +156,7 @@
 					<dependency>
 						<groupId>com.github.sommeri</groupId>
 						<artifactId>less4j</artifactId>
-						<version>0.0.13</version>
+						<version>${less4j.version}</version>
 					</dependency>
 				</dependencies>
 				<configuration>
