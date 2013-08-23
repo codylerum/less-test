@@ -1,13 +1,15 @@
-@media ( min-width :1423px) {
+@media ( min-width :1200px) {
 	#container {
 		margin-left: 235px !important;
 	}
-	#left-sidebar {
-		display: block !important;
+	#left-sidebar:not(:empty) {
+		display: block;
 	}
 }
 
 body {
+	padding-left:0px;
+	padding-right:0px;
 	background-color: #EAECEE;
 }
 
@@ -16,9 +18,9 @@ form {
 }
 
 #container {
-	min-width: 1100px;
-	margin-right: 10px;
-	margin-left: 10px;
+	min-width: 757px;
+	margin-right: 5px;
+	margin-left: 5px;
 }
 
 #toolbar {
@@ -38,7 +40,7 @@ form {
 }
 
 #left-sidebar {
-	display: none;
+	display:none;
 	position: fixed;
 	margin-top: 75px;
 	margin-left: 7px;
@@ -83,11 +85,18 @@ form {
 }
 
 .innerPanel {
-	clear: both;
 	margin-top: 5px;
 	margin-bottom: 5px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.buttons .btn {
+	margin-right: 5px;
+}
+
+.buttons .object-field-value {
+	white-space: normal;	
 }
 
 .actionButtons {
@@ -112,18 +121,6 @@ form {
 .actionLinks a:hover {
 	color: #FF9409;
 	text-decoration: underline;
-}
-
-.center {
-	text-align: center !important;
-}
-
-.left {
-	text-align: left !important;
-}
-
-.right {
-	text-align: right !important;
 }
 
 .split-left {
@@ -176,7 +173,7 @@ fieldset.home > legend {
 	margin-bottom: 0px;
 }
 
-.no-wrap>.object-field-value{
+.wrap>.object-field-value{
 	white-space:pre-line;
 }
 
@@ -294,7 +291,15 @@ fieldset.home > legend {
 	width: 100% !important;
 }
 
+.input-full {
+	width: 90%
+}
+
 .strikeThrough {
+	text-decoration: line-through;
+}
+
+.strikeThrough > div {
 	text-decoration: line-through;
 }
 
@@ -323,15 +328,15 @@ input[type="text"].input-error {
 	border-color: red;
 }
 
-td.right>input[type="text"] {
+td.text-right>input[type="text"] {
 	text-align: right;
 }
 
-td.left>input[type="text"] {
+td.text-left>input[type="text"] {
 	text-align: left;
 }
 
-td.center>input[type="text"] {
+td.text-center>input[type="text"] {
 	text-align: center;
 }
 
@@ -408,15 +413,7 @@ a:hover {
 
 .standardTable {
 	width: 100%;
-}
-
-.fixedTable {
-	table-layout:fixed;
-	width: 100%;
-}
-
-.fixedTable td {
-	.ellipsis-overflow;
+	margin-bottom:5px;
 }
 
 .pull-center {
@@ -458,6 +455,98 @@ a:hover {
 	margin-left:100px;
 }
 
+.control-group .btn-mini {
+	margin-bottom:7px;
+}
+
+.control-group > .controls >.btn:not(:first-child) {
+	margin-left:5px;
+}
+
 .strong {
 	font-weight:bold;
 }
+
+th.text-left {
+	text-align:left;
+}
+
+th.text-center {
+	text-align:center;
+}
+
+th.text-right {
+	text-align:right;
+}
+
+td.text-left {
+	text-align:left;
+}
+
+td.text-center {
+	text-align:center;
+}
+
+td.text-right {
+	text-align:right;
+}
+
+td > .label:not(:first-child) {
+	margin-left:5px;
+}
+
+td > .btn:not(:first-child) {
+	margin-left:5px;
+}
+
+td > input:not(:first-child) {
+	margin-left:5px;
+}
+
+td > input[type="checkbox"] {
+	margin-top:0;
+}
+
+.form-inline > select {
+	margin-right:5px;
+}
+
+.controls > input[type="checkbox"] {
+	margin-top:8px;
+}
+
+.controls label.checkbox.inline {
+	margin-top:-9px;
+}
+
+.object-field-value > .label:not(:first-child) {
+	margin-left:3px;
+}
+
+.topModal {
+	 top:35px !important;
+ }
+ 
+ .well.white {
+ 	background-color:white;
+ }
+ 
+ table input[type="text"] {
+ 	margin-bottom:0px;
+ }
+ 
+ .text-green {
+ 	color:green;
+ }
+ 
+  .text-red {
+ 	color:red;
+ }
+ 
+ .hide-after-five tr:nth-child(n+6) {
+ 	display:none; 
+ }
+ 
+  .hide-after-three tr:nth-child(n+4) {
+ 	display:none; 
+ }
